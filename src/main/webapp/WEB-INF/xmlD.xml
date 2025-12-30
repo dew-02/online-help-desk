@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+
+     <servlet>
+     	<servlet-name>AnnInsertServlet</servlet-name>
+     	<servlet-class>EduHelpPackage.AnnInsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AnnInsertServlet</servlet-name>
+     	<url-pattern>/AnnInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>AnnGetAllServlet</servlet-name>
+     	<servlet-class>EduHelpPackage.AnnGetAllServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AnnGetAllServlet</servlet-name>
+     	<url-pattern>/AnnGetAllServlet</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+     	<servlet-name>AnnUpdateServlet</servlet-name>
+     	<servlet-class>EduHelpPackage.AnnUpdateServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AnnUpdateServlet</servlet-name>
+     	<url-pattern>/AnnUpdateServlet</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+     	<servlet-name>AnnDeleteServlet</servlet-name>
+     	<servlet-class>EduHelpPackage.AnnDeleteServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AnnDeleteServlet</servlet-name>
+     	<url-pattern>/AnnDeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <!-- User System -->
+     <servlet>
+     	<servlet-name>LecUserInsertServlet</servlet-name>
+     	<servlet-class>LecUserPackage.LecUserInsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LecUserInsertServlet</servlet-name>
+     	<url-pattern>/LecUserInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>LecLoginServlet</servlet-name>
+     	<servlet-class>LecUserPackage.LecLoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LecLoginServlet</servlet-name>
+     	<url-pattern>/LecLoginServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>LecProfileServlet</servlet-name>
+     	<servlet-class>LecUserPackage.LecProfileServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LecProfileServlet</servlet-name>
+     	<url-pattern>/LecProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>LecUpdateProfileServlet</servlet-name>
+     	<servlet-class>LecUserPackage.LecUpdateProfileServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LecUpdateProfileServlet</servlet-name>
+     	<url-pattern>/LecUpdateProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>LecAccountDeleteServlet</servlet-name>
+     	<servlet-class>LecUserPackage.LecAccountDeleteServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LecAccountDeleteServlet</servlet-name>
+     	<url-pattern>/LecAccountDeleteServlet</url-pattern>
+     </servlet-mapping>
+</web-app>

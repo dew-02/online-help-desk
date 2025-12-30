@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<!-- Create ticket -->
+    <servlet>
+     	<servlet-name>TicketServlet</servlet-name>
+     	<servlet-class>servlet.TicketServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>TicketServlet</servlet-name>
+     	<url-pattern>/TicketServlet</url-pattern>
+     </servlet-mapping> 
+     
+ <!-- view ticket on dash board -->    
+     <servlet>
+     	<servlet-name>GellAllTicketServlet</servlet-name>
+     	<servlet-class>servlet.GetAllTicketServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>GellAllTicketServlet</servlet-name>
+     	<url-pattern>/GetAllTicketServlet</url-pattern>
+     </servlet-mapping>  
+     
+  <!-- update ticket -->
+     <servlet>
+     	<servlet-name>UpdateTicketServlet</servlet-name>
+     	<servlet-class>servlet.UpdateTicketServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateTicketServlet</servlet-name>
+     	<url-pattern>/UpdateTicketServlet</url-pattern>
+     </servlet-mapping> 
+     
+    <!-- delete ticket -->
+	    <servlet>
+	     	<servlet-name>DeleteTicketServlet</servlet-name>
+	     	<servlet-class>servlet.DeleteTicketServlet</servlet-class>
+	     </servlet>
+	     <servlet-mapping>
+	     	<servlet-name>DeleteTicketServlet</servlet-name>
+	     	<url-pattern>/DeleteTicketServlet</url-pattern>
+	     </servlet-mapping>
+	     
+	     
+	 <!-- Student Register -->
+	 <servlet>
+     	<servlet-name>StudentRegisterServlet</servlet-name>
+     	<servlet-class>servlet.StudentRegisterServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>StudentRegisterServlet</servlet-name>
+     	<url-pattern>/StudentRegisterServlet</url-pattern>
+     </servlet-mapping> 
+
+
+</web-app>
